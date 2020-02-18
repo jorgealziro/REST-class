@@ -1,0 +1,26 @@
+{
+  "name": "node_playground",
+  "version": "1.0.0",
+  "description": "Test Case for npm studies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgealziro/REST-class.git"
+  },
+  "keywords": [
+    "test",
+    "noob"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorgealziro/REST-class/issues"
+  },
+  "homepage": "https://github.com/jorgealziro/REST-class#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
