@@ -40,3 +40,11 @@ let counter = 10;
 while (counter < 15) {
     console.log(counter++)
 }
+
+// Do-while example
+counter = 5
+do {
+    console.log(`counting a ${counter}`);
+    counter++;
+} while (counter < 10);
+
