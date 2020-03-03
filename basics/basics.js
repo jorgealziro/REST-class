@@ -18,4 +18,19 @@ console.log(catName);
 catName = 'Langa'; // But it can be reassigned
 console.log(catName);
 
-const fruit = 'Banana'; // Cannot be reassigned or redeclared
+// Switch/case example
+const fruit = 'Cato'; // Cannot be reassigned or redeclared
+
+switch (fruit) {
+    case 'Lemon':
+        console.log('Fruit is LEMON');
+        break;
+    case 'Banana':
+        console.log('Fruit is BANANA');
+        break;
+    case 'apple':
+        console.log('Fruit is APPLE');
+        break;
+    default:
+        console.log('IS NO FRUIT WHY');
+}
