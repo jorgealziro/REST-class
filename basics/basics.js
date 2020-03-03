@@ -34,3 +34,9 @@ switch (fruit) {
     default:
         console.log('IS NO FRUIT WHY');
 }
+
+// While example
+let counter = 10;
+while (counter < 15) {
+    console.log(counter++)
+}
