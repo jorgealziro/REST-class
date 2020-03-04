@@ -52,3 +52,30 @@ do {
 for (let i = 1; i < 10; ++i) {
     console.log(`for the ${i}!`)
 }
+
+// Function examples 
+function sayHi(name) {
+    console.log(`SUP ${name}!`);
+};
+
+sayHi('Jorge');
+
+function simpleSum(a, b, c) {
+    return a + b + c;
+};
+
+let result = simpleSum(4, 6, 7);
+console.log(result);
+
+// IIFI example
+let scream = (function(name, age) {
+    return `SUUUUP ${name} YOU ARE ${age}`;
+}('Jorge', 3));
+
+console.log(scream);
+
+// ES6 fat arrow equivalent
+
+let scream6 = (name, age) => `SUUUUP ${name} YOU ARE ${age} NOW`('Jorge', 4);
+
+console.log(scream);
