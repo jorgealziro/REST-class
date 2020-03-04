@@ -48,3 +48,7 @@ do {
     counter++;
 } while (counter < 10);
 
+// For example
+for (let i = 1; i < 10; ++i) {
+    console.log(`for the ${i}!`)
+}
