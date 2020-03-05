@@ -31,3 +31,31 @@ console.log(`${bananaQnt.sort()} are my organized bananas`);
 
 // Slice example
 console.log(randomStuff.slice(2));
+
+// For Each helper example
+bananaQnt.forEach(value => console.log(value*2));
+
+// Map helper example
+console.log(bananaQnt.map(i => i**2));
+
+// Filter helper example
+console.log(bananaQnt.filter(i => i % 2 === 0));
+
+//Find helper example
+let stuffs = [
+    bananaQnt,
+    randomStuff
+];
+
+console.log(stuffs.find(i => i.length < 5));
+
+// Every helper function
+console.log(bananaQnt.every(i => i > 2));
+
+// Some helper function
+console.log(bananaQnt.some(i => i > 2));
+
+// Reduce helper function
+console.log(bananaQnt.reduce((sum, pile) => {
+    return sum + pile;
+}, 0)/bananaQnt.length);
