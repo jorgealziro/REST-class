@@ -46,3 +46,8 @@ function Backpack(make, material, year){
 
 let myBP = new Backpack('Swiss', 'polyester', 2011);
 console.log(myBP.getFullDescription())
+
+// Bind example
+
+let backpackDescription = myBP.getFullDescription.bind(myBP);
+console.log(backpackDescription());
