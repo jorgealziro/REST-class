@@ -1,0 +1,44 @@
+{
+  "name": "restaurant-api",
+  "version": "0.0.1",
+  "description": "Restaurant API for REST course",
+  "main": "dist",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
+    "build": "babel src -s -D -d dist --presets es2015,stage-0",
+    "start": "NODE_ENV=production pm2 start dist",
+    "prestart": "npm run -s build",
+    "lint": "eslint src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "eslintConfig": {
+    "parserOptions":{
+      "ecmaVersion": 7,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 1
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorgealziro"
+  },
+  "keywords": [
+    "api",
+    "restaurant"
+  ],
+  "author": "Jorge Alziro",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.3"
+  }
+}
+
+
