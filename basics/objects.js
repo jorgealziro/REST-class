@@ -51,3 +51,10 @@ console.log(myBP.getFullDescription())
 
 let backpackDescription = myBP.getFullDescription.bind(myBP);
 console.log(backpackDescription());
+
+// Call Example
+function niceBike(compliment){
+    console.log(`${compliment} ${this.make} ${this.model} dude!`);
+};
+
+niceBike.call(bike, 'Very cool');
